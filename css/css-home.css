@@ -1,0 +1,123 @@
+body{    
+    
+}
+@font-face{
+    src: url(../fonts/futuram.ttf);
+    font-family: futuram;
+}
+.kaca{
+    background-size: cover;
+    width: 100%;
+    background-size: auto;
+    background-attachment: fixed;
+}
+.menu{
+    margin: 20px;
+    color: black;
+    font-family: futuram;   
+}
+.menu a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.menu a:focus,.menu a:hover{
+    text-decoration: none;
+    color: black;
+}
+.nav ul,
+.nav ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  font-size: 1px;
+}
+
+
+/*
+  Demo
+*/
+.show-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.nav__list {
+  background: white;
+  border-radius: 60px;
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+
+.nav__list > li {
+  display: inline-block;
+}
+
+.nav__list a {
+  display: block;
+  padding: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.nav__list a:hover,
+.nav__list a:focus {
+  background: rgb(235,115,37);
+  color: #fff;
+}
+
+.has-drop {
+  position: relative;
+}
+
+
+.nav__list__drop {
+  left: 0;
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  opacity: 0;
+  transform: translateY(-20px);
+  height: 1px;
+  transition: transform .2s ease-in-out,
+              opacity .1s ease-out;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.nav__list__drop {
+  background: white;
+  min-width: 100%;
+}
+
+.nav__list__drop a {
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+.nav__list a:focus + .nav__list__drop,
+.has-drop:hover .nav__list__drop,
+.nav__list__drop.has-focus {
+  opacity: 1;
+  transform: translateY(0px);
+  height: auto;
+  z-index: 1;
+}
+
+.no-js .nav__list__drop {
+  display: none;
+}
+
+.no-js .has-drop:hover .nav__list__drop {
+  display: block;
+}
+
