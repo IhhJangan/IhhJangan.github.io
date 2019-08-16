@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1565945305,
+	"version": 1565946949,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -34,10 +34,9 @@
 		"icon-256.png",
 		"loading-logo.png",
 		"dalam rumah.mov",
-		"luar rumah.mov",
 		"di mobil.mov",
 		"gunung.mov",
-		"layout website.png",
+		"luar rumah.mov",
 		"pantai 2.mov",
 		"sekolah dalam kelas.mov"
 	]
