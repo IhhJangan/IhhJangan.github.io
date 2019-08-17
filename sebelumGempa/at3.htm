@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Boomer" />
+    
+    <link href="css/css.css" type="text/css" rel="stylesheet" />
+    <link href="dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+<script>
+function hover(element,fname) {
+  element.setAttribute('src', fname);
+}
+
+function unhover(element,fname) {
+  element.setAttribute('src', fname);
+}
+
+    $(document).ready(function(){
+        $(".vid1").click(function(){
+            $("#vid0").hide(600);
+            $("#vid1").toggle(600);
+            $("#vid2").hide(600);
+            $("#vid3").hide(600);
+            $("#vid4").hide(600);
+            $("#vid5").hide(600);
+        })
+        $(".vid2").click(function(){
+            $("#vid0").hide(600);
+            $("#vid1").hide(600);
+            $("#vid2").toggle(600);
+            $("#vid3").hide(600);
+            $("#vid4").hide(600);
+            $("#vid5").hide(600);
+        })
+        $(".vid3").click(function(){
+            $("#vid0").hide(600);
+            $("#vid3").toggle(600);
+            $("#vid1").hide(600);
+            $("#vid2").hide(600);
+            $("#vid4").hide(600);
+            $("#vid5").hide(600);
+        })
+        $(".vid4").click(function(){
+            $("#vid0").hide(600);
+            $("#vid1").hide(600);
+            $("#vid2").hide(600);
+            $("#vid3").hide(600);
+            $("#vid4").toggle(600);
+            $("#vid5").hide(600);
+        })
+        $(".vid5").click(function(){
+            $("#vid0").hide(600);
+            $("#vid1").hide(600);
+            $("#vid2").hide(600);
+            $("#vid3").hide(600);
+            $("#vid4").hide(600);
+            $("#vid5").toggle(600);
+        })
+    })
+</script>
+    <style>
+    body{
+        text-align: center;
+        background-image: url('3.png');
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: yellow;
+        background-size: 50%;
+    }
+    .back{
+        font-family: futurab;
+        color: black;
+        background-color: white;
+        float: right;
+        width: 0 auto;
+        padding: 7px 14px;
+        border-radius: 16px;
+        margin: 10px;
+        font-size: 24px;
+        border: 2px solid;
+    }
+    .header{
+        font-family: futurab;
+    }
+
+    .back a{
+        text-decoration: none;
+        color: black;
+    }
+    .opvi{
+        font-family: futurab;
+        padding: 20px;
+        border-radius: 15px;
+    }
+    .opvi a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background-color:rgb(250,241,102) ;
+        display: block;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: 10px 0;
+    }
+    .opvi a:focus,.opvi a:hover{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background-color:rgb(229,34,38) ;
+    }
+    .btnExit {
+    position: fixed;
+    right: 0px;
+    width: auto;
+    height: auto;
+    }
+    </style>
+	<title>Ayo Tanggap Gempa</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="col-md-6 col-sm-6 col-xs-6" ><div class="opvi">
+        <span class="header" style="font-size: 24px ;">Sebelum Gempa </br> Bumi Terjadi</span><br /><br />
+        <img class="vid1" src="5.png" width="50%" onmouseover="hover(this,'12.png')" onmouseout="unhover(this,'5.png')">
+        <img class="vid2" src="6.png" width="50%" onmouseover="hover(this,'13.png')" onmouseout="unhover(this,'6.png')">
+        <img class="vid3" src="7.png" width="50%" onmouseover="hover(this,'14.png')" onmouseout="unhover(this,'7.png')">
+        <img class="vid4" src="8.png" width="50%" onmouseover="hover(this,'15.png')" onmouseout="unhover(this,'8.png')">
+        <img class="vid5" src="9.png" width="50%" onmouseover="hover(this,'16.png')" onmouseout="unhover(this,'9.png')">
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6" >
+    <div id="vid0">
+        <img src="10.png" width="50%"/><br /><br />
+    </div>
+    
+    <div id="vid1" hidden="">
+        <img src="22.png" width="50%"/><br /><br />
+        <img src="17.png" width="50%"><br /><br />
+    </div>
+    <div id="vid2" hidden="">
+        <img src="23.png" width="50%"><br /><br />
+        <img src="18.png" width="50%"><br /><br />
+    </div>
+    <div id="vid3" hidden="">
+            <img src="24.png" width="50%"><br /><br />
+            <img src="19.png" width="50%"><br /><br />
+    </div>
+    <div id="vid4" hidden="">
+            <img src="24.png" width="50%"><br /><br />
+            <img src="20.png" width="50%"><br /><br />
+    </div>
+    <div id="vid5" hidden="">
+            <img src="26.png" width="50%"><br /><br />
+            <img src="21.png" width="50%"><br /><br />
+    </div>
+    </div>
+</div>
+<div class="col-md-12 col-sm-12 col-xs-12 btnExit" style=""><a href="../bagaimana.html"><img src="11.png" width="10%"></img></a></div>
+</body>
+</html>
