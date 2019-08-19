@@ -11,6 +11,25 @@
 	<title>Ayo Tanggap Gempa</title>
 </head>
 <style>
+	.getar img:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s; 
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; 
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 </style>
 
 <body>
@@ -22,9 +41,9 @@
             <img src="images/apa/6.png" style="width: 96%;position:absolute;z-index:3;" />
             <img src="images/apa/6-crop.png" style="width: 96%;z-index:4;" />
             <div class="col-md-12 col-sm-12 col-xs-12" style="z-index: 4;position:absolute;">
-            <div class="col-md-4 col-sm-4 col-xs-4"><a href="gempa_tektonik.html"><img src="images/apa/2.png" style="width: 100%;" /></a></div>
-            <div class="col-md-4 col-sm-4 col-xs-4"><a href="gempa_vulkanik.html"><img src="images/apa/3.png" style="width: 100%;" /></a></div>
-            <div class="col-md-4 col-sm-4 col-xs-4"><a href="gempa_runtuhan.html"><img src="images/apa/4.png" style="width: 100%;" /></a></div>
+            <div class="col-md-4 col-sm-4 col-xs-4 getar"><a href="gempa_tektonik.html"><img src="images/apa/2.png" style="width: 100%;" /></a></div>
+            <div class="col-md-4 col-sm-4 col-xs-4 getar"><a href="gempa_vulkanik.html"><img src="images/apa/3.png" style="width: 100%;" /></a></div>
+            <div class="col-md-4 col-sm-4 col-xs-4 getar"><a href="gempa_runtuhan.html"><img src="images/apa/4.png" style="width: 100%;" /></a></div>
             <div class="col-md-12 col-sm-12 col-xs-12" style="text-align: right;margin: 30% 20% 0 0;">
             <a href="index.html">
             <img src="images/back.png" style="width: 25%;" />
